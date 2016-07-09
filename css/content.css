@@ -8,10 +8,20 @@
   margin: 10px auto;
 }
 
-.borderless th, .borderless td{
+.borderless tr, .borderless td{
   border: none !important;
 }
 
 .borderless td{
   padding: 10px !important;
+}
+
+.news_contents {
+  padding: 5px 0;
+}
+
+.news_contents_border {
+  border-bottom: 1px solid;
+  border-color: #B6B6B6;
+  padding: 5px 0;
 }

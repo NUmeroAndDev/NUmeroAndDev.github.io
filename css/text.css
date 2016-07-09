@@ -6,6 +6,18 @@ h2.content_title {
   color: #00BCD4;
 }
 
-h3 {
+div.contents {
+  color: #737373;
+  font-size: medium;
   padding: 0 12px;
+}
+
+div.description {
+  color: #737373;
+  font-size: 95%;
+}
+
+div.contents > b {
+  color: #000000;
+  font-size: large;
 }

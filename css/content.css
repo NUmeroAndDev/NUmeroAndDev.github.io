@@ -7,3 +7,11 @@
 .main div {
   margin: 10px auto;
 }
+
+.borderless th, .borderless td{
+  border: none !important;
+}
+
+.borderless td{
+  padding: 10px !important;
+}

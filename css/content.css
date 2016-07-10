@@ -1,3 +1,7 @@
+body {
+  padding-top: 70px;
+}
+
 .main {
   width: auto;
   max-width: 850px;

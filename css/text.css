@@ -16,8 +16,3 @@ div.description {
   color: #737373;
   font-size: 95%;
 }
-
-div.contents > b {
-  color: #000000;
-  font-size: large;
-}

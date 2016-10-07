@@ -47,69 +47,21 @@
         <h2 class="content_title">News</h2>
         <div class="contents">
             <table class="table borderless">
-              <tbody>
-                <!-- insert new news -->
-                <tr>
-                  <td><b>2016/09/28</b></td>
-                  <td>
-                    <a href="https://play.google.com/store/apps/details?id=com.numero.simplememo" target="_blank">はやめも</a> Ver3.1リリース<br />
-                    <div class="description">
-                      レイアウトを一部変更しました。<br />いくつかのバグを修正しました。
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><b>2016/09/22</b></td>
-                  <td>
-                    <a href="https://play.google.com/store/apps/details?id=com.numero.cutememo" target="_blank">かわいいメモ帳</a> Ver1.0.0リリース<br />
-                    <div class="description">
-                      シンプルでかわいいデザインのAndroid用アプリ、かわいいメモ帳をリリースしました。
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><b>2016/09/18</b></td>
-                  <td>
-                    <a href="https://play.google.com/store/apps/details?id=com.numero.sojodia" target="_blank">SojoDia</a> Ver5.0リリース<br />
-                    <div class="description">
-                      時刻表データを自動で更新できるようになりました。<br />レイアウトを一部変更しました。<br />いくつかのバグを修正しました。
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><b>2016/07/27</b></td>
-                  <td>
-                    <a href="https://play.google.com/store/apps/details?id=com.numero.screeneco" target="_blank">Screen GO</a> Ver1.0リリース<br />
-                    <div class="description">
-                      Pokemon GOをサポートするAndroid用アプリ、Screen GOをリリースしました。
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><b>2016/07/07</b></td>
-                  <td>
-                    <a href="https://play.google.com/store/apps/details?id=com.numero.simplememo" target="_blank">はやめも</a> Ver3.0.1リリース<br />
-                    <div class="description">
-                      Ver3.0アップデート後、アプリ起動時に一部端末でクラッシュするバグを修正しました。
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><b>2016/07/07</b></td>
-                  <td>
-                    ホームページを公開<br />
-                  </td>
-                </tr>
+              <tbody id="news_list">
 
               </tbody>
             </table>
         </div>
       </div>
+
+      <!-- <div class="text-center">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li id="page1" class="page-item active"><a class="page-link" href="#" onclick="onClickPage(1); return false;">1</a></li>
+            <li id="page2" class="page-item"><a class="page-link" href="#" onclick="onClickPage(2); return false;">2</a></li>
+          </ul>
+        </nav>
+      </div> -->
 
     </div>
 
@@ -120,6 +72,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/pagination.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

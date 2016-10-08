@@ -19,7 +19,7 @@ div.description {
 
 div.news_date {
   font-size: calc(0.5em + 1vmin);
-  font-weight: 100;
+  font-weight: 200;
   display: inline;
 }
 

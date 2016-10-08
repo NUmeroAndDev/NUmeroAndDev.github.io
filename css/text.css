@@ -16,3 +16,7 @@ div.description {
   color: #737373;
   font-size: 95%;
 }
+
+td.news_date {
+  font-size: calc(12px + 0.25vw);
+}

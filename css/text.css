@@ -1,29 +1,18 @@
-h2.content_title {
-  padding: 8px;
-  border-bottom: 1px solid;
-  border-color: #00BCD4;
-  margin: 4px;
-  color: #00BCD4;
+.profile-title, .news-title, .products-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 12px;
 }
 
-div.contents {
-  color: #737373;
-  font-size: medium;
-  padding: 0 12px;
+.news-more-button {
+  margin-right: 12px;
+  text-align: right;
 }
 
-div.description {
-  color: #737373;
-  font-size: 95%;
+.news-date-text {
+  text-align: right;
 }
 
-div.news_date {
-  font-size: calc(0.5em + 1vmin);
-  font-weight: 200;
-  display: inline;
-}
-
-div.news_title {
-  font-size: calc(0.75em + 1vmin);
-  font-weight: 700;
+.news-layout .mdl-card__supporting-text {
+  width: auto !important;
 }

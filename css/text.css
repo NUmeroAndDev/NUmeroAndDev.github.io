@@ -23,7 +23,7 @@ div.news_date {
   display: inline;
 }
 
-.profile-title, .news-title {
+.profile-title, .news-title, .products-title {
   margin-top: 16px;
   margin-bottom: 8px;
   margin-left: 12px;

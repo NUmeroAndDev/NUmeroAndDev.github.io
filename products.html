@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NUmero's Page</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/content.css" rel="stylesheet">
     <link href="css/text.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="img/favicon.png" rel="icon" type="image/png">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -21,134 +21,213 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./index.html">NUmero's Page</a>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- header -->
+      <header class="header-layout mdl-layout__header">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">Products</span>
+          <div class="mdl-layout-spacer"></div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li class="active"><a>Products</a></li>
-          </ul>
-        </div>
+      </header>
+
+      <!-- nav drawer -->
+      <div class="drawer-layout mdl-layout__drawer">
+        <span class="mdl-layout__title">
+          <img class="nav-logo-image" src="img/icon_numero.png">
+          NUmero's Page
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="./index.html">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+          <a class="mdl-navigation__link" href="./news.html">
+            <i class="material-icons">notifications</i>
+            News
+          </a>
+          <a class="mdl-navigation__link" href="./products.html">
+            <i class="material-icons">apps</i>
+            Products
+          </a>
+        </nav>
       </div>
-    </nav>
 
-    <div class="container main">
-      <div class="row products col-sm-12">
-        <h2 class="content_title">Android Apps</h2>
-        <table class="table borderless">
-          <tbody>
+      <!-- contents -->
+      <main class="mdl-layout__content">
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_simplememo.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.simplememo" target="_blank">はやめも</a></h4>
+        <div class="main-content">
+
+          <div class="products-title mdl-typography--display-1-color-contrast">
+            Products
+          </div>
+
+          <div class="products-layout mdl-grid">
+
+            <div class="mdl-cell mdl-card mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--4dp">
+              <div class="mdl-card__media">
+                <img src="img/icon_simplememo.png" width="140px">
+              </div>
+
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">
+                  メモ帳
+                </h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
                 Android Wearからも使えるメモ帳アプリ
-              </td>
-            </tr>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_cutenote.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.cutememo" target="_blank">かわいいメモ帳</a></h4>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="news-link mdl-button mdl-js-button mdl-button--accent" href="https://play.google.com/store/apps/details?id=com.numero.worktimecalc" target="_blank">
+                  Download Now
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--4dp">
+              <div class="mdl-card__media">
+                <img src="img/icon_cutenote.png" width="140px">
+              </div>
+
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">
+                  かわいいメモ帳
+                </h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
                 シンプルでかわいいメモ帳アプリ
-              </td>
-            </tr>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_moneycalc.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.moneycalc" target="_brank">お金計算アプリ</a></h4>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="news-link mdl-button mdl-js-button mdl-button--accent" href="https://play.google.com/store/apps/details?id=com.numero.cutememo" target="_blank">
+                  Download Now
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--4dp">
+              <div class="mdl-card__media">
+                <img src="img/icon_moneycalc.png" width="140px">
+              </div>
+
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">
+                  お金計算アプリ
+                </h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
                 シンプルなお金計算アプリ
-              </td>
-            </tr>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_checkbalance.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.checkbalance" target="_brank">残高リーダ</a></h4>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="news-link mdl-button mdl-js-button mdl-button--accent" href="https://play.google.com/store/apps/details?id=com.numero.moneycalc" target="_blank">
+                  Download Now
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--4dp">
+              <div class="mdl-card__media">
+                <img src="img/icon_checkbalance.png" width="140px">
+              </div>
+
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">
+                  残高リーダ
+                </h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
                 ICOCA、SuicaなどICカードの残高リーダアプリ
-              </td>
-            </tr>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_sojodia.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.sojodia" target="_blank">SojoDia</a></h4>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="news-link mdl-button mdl-js-button mdl-button--accent" href="https://play.google.com/store/apps/details?id=com.numero.checkbalance" target="_blank">
+                  Download Now
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--4dp">
+              <div class="mdl-card__media">
+                <img src="img/icon_sojodia.png" width="140px">
+              </div>
+
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">
+                  SojoDia
+                </h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
                 関西大学高槻キャンパス（総合情報学部）用のバス時刻表アプリ
-              </td>
-            </tr>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_screengo.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.screeneco" target="_blank">Screen GO</a></h4>
-                Pokemon GOをサポートするアプリ
-              </td>
-            </tr>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="news-link mdl-button mdl-js-button mdl-button--accent" href="https://play.google.com/store/apps/details?id=com.numero.sojodia" target="_blank">
+                  Download Now
+                </a>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_timecalc.png" width="100">
-              </td>
-              <td>
-                <h4><a href="https://play.google.com/store/apps/details?id=com.numero.worktimecalc" target="_blank">勤怠時間計算</a></h4>
+            </div>
+
+            <div class="mdl-cell mdl-card mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-shadow--4dp">
+              <div class="mdl-card__media">
+                <img src="img/icon_timecalc.png" width="140px">
+              </div>
+
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">
+                  勤怠時間計算
+                </h2>
+              </div>
+
+              <div class="mdl-card__supporting-text">
                 勤務時間を計算するアプリ
-              </td>
-            </tr>
+              </div>
 
-            <tr>
-              <td class="table_icon_cell" width="100">
-                <img src="img/icon_applauncher.png" width="100">
-              </td>
-              <td>
-                <h4><a>アプリランチャー</a></h4>
-                どこからでもアプリ一覧を表示できるランチャーアプリ(Not release)
-              </td>
-            </tr>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="news-link mdl-button mdl-js-button mdl-button--accent" href="https://play.google.com/store/apps/details?id=com.numero.worktimecalc" target="_blank">
+                  Download Now
+                </a>
+              </div>
 
-            <tr>
-              <td colspan="2">
-                <div class="more_app text-right">
-                  <a href="https://play.google.com/store/apps/dev?id=5532660247086424417" target="_blank">More</a>
-                </div>
-              </td>
-            </tr>
+            </div>
 
-          </tbody>
-        </table>
-      </div>
+          </div>
 
+        </div>
+
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Copyright© NUmero 2017</div>
+          </div>
+          <div class="mdl-mini-footer__right-section">
+            <button class="footer-button mdl-button mdl-js-button mdl-button--icon">
+              <a href="https://twitter.com/NUmeroDev" target="_blank">
+                <img src="img/icon_twitter.png" width="36px" height="36px">
+              </a>
+            </button>
+            <button class="footer-button mdl-button mdl-js-button mdl-button--icon">
+              <a href="https://github.com/NUmeroAndDev" target="_blank">
+                <img src="img/icon_github.png" width="32px" height="32px">
+              </a>
+            </button>
+          </div>
+        </footer>
+
+      </main>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted text-center">Copyright© NUmero 2017</p>
-      </div>
-    </footer>
-
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
   </body>
 </html>

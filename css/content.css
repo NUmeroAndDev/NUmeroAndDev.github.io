@@ -40,6 +40,21 @@
   font-size: 16px;
 }
 
+.products-layout {
+  max-width: 900px;
+  margin: auto;
+}
+
+.products-layout .mdl-card__media {
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.products-layout img {
+  max-width: 140px;
+  padding: 16px;
+}
+
 .footer-button {
   margin: 0 16px !important;
 }

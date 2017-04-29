@@ -1,24 +1,15 @@
-body {
-  padding-top: 70px;
-  font-family: 'Roboto', sans-serif;
+.main-content {
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.main {
-  width: auto;
-  max-width: 850px;
-  padding: 0 15px;
+.main-content .mdl-button {
+  text-decoration: none;
 }
 
-.main div {
-  margin: 10px auto;
-}
-
-.borderless tr, .borderless td{
-  border: none !important;
-}
-
-.borderless td{
-  padding: 10px !important;
+.profile-layout {
+  max-width: 900px;
 }
 
 .news_contents {
@@ -29,4 +20,26 @@ body {
   border-bottom: 1px solid;
   border-color: #B6B6B6;
   padding: 5px 0;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+.news-text {
+  padding-bottom: 56px !important;
+}
+
+.news-layout .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
+
+.news-layout .mdl-card__actions a {
+  border-top: none;
+  font-size: 16px;
+}
+
+.footer-button {
+  margin: 0 16px !important;
 }

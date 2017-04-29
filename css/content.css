@@ -17,6 +17,10 @@
   margin: auto;
 }
 
+.news-layout .mdl-card {
+  min-height: auto !important;
+}
+
 .news-arrow-layout {
   max-width: 900px;
   margin: auto;

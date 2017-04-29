@@ -12,14 +12,22 @@
   max-width: 900px;
 }
 
-.news_contents {
-  padding: 5px 0;
+.news-layout {
+  max-width: 900px;
+  margin: auto;
 }
 
-.news_contents_border {
-  border-bottom: 1px solid;
-  border-color: #B6B6B6;
-  padding: 5px 0;
+.news-arrow-layout {
+  max-width: 900px;
+  margin: auto;
+}
+
+.news-arrow-layout .mdl-cell {
+  text-align: right;
+}
+
+.no-top-padding {
+  padding-top: 0 !important;
 }
 
 .no-bottom-padding {

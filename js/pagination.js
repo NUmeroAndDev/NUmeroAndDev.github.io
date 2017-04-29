@@ -1,21 +1,38 @@
-function onClickPage(page){
+currentPage = 1;
+articleCount = 2;
 
-  if (!$('#page' + page).hasClass('active')) {
-    $('#news_list').load('news_article/page' + page + '.html');
-    $('#page' + page).addClass('active');
-    $('html,body').animate({
-      scrollTop:0
-    }, 'fast') ;
+function onClickPrevPage(){
+  if ($('#prev-button').is(':disabled')) {
+    return;
   }
+  currentPage += 1;
+  if (currentPage == articleCount) {
+    //fix me prop is not work
+    $('#prev-button').attr('disabled', '');
+  }
+  $('#next-button').removeAttr('disabled');
+  $('#news_list').load('news_article/page' + currentPage + '.html');
+  $('html,body').animate({
+    scrollTop:0
+  }, 'fast') ;
+  return;
+}
 
-  for (var i = 1; i <= 2; i++) {
-    if (i == page) {
-      continue;
-    }
-    if ($('#page' + i).hasClass('active')) {
-      $('#page' + i).removeClass('active');
-    }
+function onClickNextPage(){
+  if ($('#next-button').is(':disabled')) {
+    return;
   }
+  currentPage -= 1;
+  if (currentPage == 1) {
+    // fix me prop is not work
+    $('#next-button').attr('disabled', '');
+  }
+  $('#prev-button').removeAttr('disabled');
+  $('#news_list').load('news_article/page' + currentPage + '.html');
+  $('html,body').animate({
+    scrollTop:0
+  }, 'fast') ;
+  return;
 }
 
 $(function(){
